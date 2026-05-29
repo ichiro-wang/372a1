@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-lakers: "Bebas Neue", sans-serif;
+  --color-lakers-purple: #552583;
+  --color-lakers-gold: #fdb927;
+  --color-lakers-light: #f8f5ff;
+}
+
+.notes-list {
+  scrollbar-width: thin;
+}
