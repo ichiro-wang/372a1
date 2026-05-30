@@ -44,12 +44,18 @@ const Home = () => {
 
   return (
     <div className="flex flex-col h-screen">
-      <header className="h-16 border-b px-4 flex gap-4 items-center justify-center bg-lakers-gold">
-        <LeBron />
-        <h1 className="text-5xl font-lakers text-lakers-purple italic cursor-default select-none">
-          LeNote James
-        </h1>
-        <LeBron />
+      <header className="relative h-16 border-b bg-lakers-gold overflow-hidden">
+        <div className="absolute inset-0 flex justify-center">
+          {Array.from({ length: 30 }, (_, i) => (
+            <LeBron key={i} />
+          ))}
+        </div>
+
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <h1 className="text-5xl font-lakers bg-lakers-gold text-lakers-purple italic cursor-default select-none px-4 w-96 h-full flex items-center justify-center [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
+            LeNote James
+          </h1>
+        </div>
       </header>
       <main className="flex flex-1 min-h-0 p-2 gap-2">
         <NoteList

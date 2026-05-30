@@ -8,6 +8,6 @@
   --color-lakers-light: #f8f5ff;
 }
 
-.notes-list {
+.notes-list, .notes-text {
   scrollbar-width: thin;
 }

@@ -1,4 +1,5 @@
 import type { Note } from "../types/types";
+import LeBron from "./LeBron";
 import NoteItem from "./NoteItem";
 
 interface Props {
@@ -13,10 +14,11 @@ const NoteList = ({ notes, currentNote, onSelect, onNew }: Props) => {
   return (
     <div className="border rounded p-4 gap-2 flex flex-col w-[30%] overflow-y-auto notes-list">
       <div
-        className="border rounded p-2 bg-lakers-purple text-xl text-lakers-gold font-bold cursor-pointer hover:opacity-90"
+        className="border rounded p-2 gap-2 flex h-16 items-center bg-lakers-purple text-xl text-lakers-gold font-bold cursor-pointer hover:opacity-90 truncate"
         onClick={onNew}
       >
         Create LeNote
+        <LeBron />
       </div>
       {notes.map((n) => (
         <NoteItem key={n.id} note={n} isSelected={currentNote.id === n.id} onClick={onSelect} />

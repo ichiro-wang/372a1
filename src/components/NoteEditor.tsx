@@ -29,7 +29,7 @@ const NoteEditor = ({ note, onSave, onDelete, isNewNote }: Props) => {
       />
       <textarea
         placeholder="Start writing..."
-        className="border rounded px-3 py-2 flex-1 resize-none placeholder:text-gray-400"
+        className="border rounded px-3 py-2 flex-1 resize-none placeholder:text-gray-400 notes-text"
         value={body}
         onChange={(e) => setBody(e.target.value)}
       />
