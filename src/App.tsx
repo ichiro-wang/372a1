@@ -1,5 +1,5 @@
 import "./index.css";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import { Toaster } from "react-hot-toast";
@@ -11,8 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navigate to="/notes" replace />} />
-          <Route path="notes" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
