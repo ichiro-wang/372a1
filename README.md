@@ -6,7 +6,7 @@
 [list]: /src/components/NoteList.tsx
 [interface]: /src/types/types.ts
 [build]: /dist
-[deploy]: http://34.53.73.47/
+[deploy]: http://34.19.115.28/
 1. **NoteEditor** component [here][editor]
 2. **NoteList** component [here][list]
 3. **Note Interface** [here][interface]
